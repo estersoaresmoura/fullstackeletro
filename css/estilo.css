@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  background-color: lightblue;
+}
+
+/* menu */
+nav.menu{
+    background-color: aqua;
+    font-size: 18px ;
+}
+.menu img{
+    width: 100px;
+    margin: 10px 0px;
+}
+.menu a{
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: bolder;
+    vertical-align: middle;
+    margin-left: 150px;
+}
+footer{
+    text-align: center;
+}
+footer img {
+    width: 400px;
+    margin: 3px auto;
+}
+.home{
+    text-align: center;
+}
+.lojas div{
+    display: inline-block;
+    width: 200px;
+    padding: 20px;
+    vertical-align: top;
+    margin-left: 50px;
+}
+.lojas h1{
+    margin-left: 50px;
+}
+.contato {
+        text-align: center;
+}
+.contato img{
+    width: 70px;
+}
+.contato div{
+    padding: 20px;
+    margin: 30px;
+    display: inline-block;
+}
+hr{
+border-color: darkblue;
+}
+.categorias{
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 17%;
+}
+.categorias li{
+    padding: 5px;
+    cursor: pointer;
+}
+.produtos{
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 80%;
+}
+ .produtos img{
+     width: 100px;
+ }
+.produtos div{
+    display: inline-block;
+    text-align: center;
+    margin-left: 30px;
+    width: 300px;
+}
+.valor{
+    text-decoration: line-through;
+}
+.valorAtual{
+    color: darkred;
+    font-weight: bolder;
+    font-size: 22px;
+}
+.mercadorias {
+display: inline-block;
+}
+.mercadorias h1{
+margin-left: 50px;
+}
