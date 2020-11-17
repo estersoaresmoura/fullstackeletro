@@ -1,0 +1,45 @@
+
+-- Criação de banco de dados 
+create database fseletro;
+
+
+-- Criação de tabela
+create table produtos (
+id int auto_increment,
+categoria varchar(100),
+descricao varchar(500),
+preco float,
+preco_final float,
+imagem varchar(100),
+primary key (id));
+
+
+-- Inserção de dados
+
+insert into produtos (categoria, descricao, preco, preco_final, imagem)
+values
+("Geladeira", "Geladeira Frost Free Brastemp Geladeira Frost Free Brastemp Side Inverse", "540l", "5019", "imagens/refrigerator.png"),
+("Geladeira", "Geladeira Frost Free Brastemp Branca 375l", "2068.6", "1910", "imagens/refrigerator.png"),
+("Geladeira", "Geladeira Frost Free Consul Prata 340l", "2199.9", "2069", "imagens/refrigerator.png"),
+("Fogão", "Fogão 4 Bocas Consul Inox com Mesa de Vidro", "1209.9", "1129", "Imagens/fogao.png"),
+("Fogão", "Fogão de Piso 4 Bocas Atlas Monaco com Acendimento Automático", "609.98", "519.7", "Imagens/fogao.png"),
+("Microondas", "Microondas Consul 32l Inox 220v", "580.9", "409.88", "Imagens/microondas.png"),
+("Microondas", "Microondas 25l Espelhado Philco 220v", "508.78", "464.53", "Imagens/microondas.png"),
+("Microondas", "Forno Microondas Electrolux 20L Branco", "459.9", "436", "Imagens/microondas.png"),
+("Lava Louça", "Lava Louça Electrolux Inox com 10 Serviços 06 Programas de Lavagem 127v", "3599", "2799.9", "Imagens/lavaloucas.png"),
+("Lava Louça", "Lava Louça Compacta 8 Serviços Branca 127v Brastemp", "1970.5", "1730", "Imagens/lavaloucas.png");
+
+
+-- Criação de uma outra tabela de pedidos com nome do cliente, endereço, telefone, nome do produto, valor unitário, quantidade e valor totala. 
+
+CREATE TABLE `fseletro`.`pedidos` (
+  `idpedidos` INT NOT NULL AUTO_INCREMENT,
+  `cliente` VARCHAR(255) NOT NULL,
+  `endereço` VARCHAR(255) NULL,
+  `telefone` VARCHAR(45) NULL,
+  `descricao_produto` VARCHAR(255) NULL,
+  `preco` FLOAT NULL,
+  `quantidade` INT NULL,
+  `total_compra` FLOAT NULL,
+  PRIMARY KEY (`idpedidos`))
+DEFAULT CHARACTER SET = utf8mb4;
